@@ -1,0 +1,105 @@
+/* color stocks */
+:root {
+  --greenfromw3s: #4CAF50;
+  --matchboxcolorfromgetbootstrap: #7952b3;
+  --sienna: #a0522d;
+  --brown : 	#a52a2a;
+  --indianred: #cd5c5c;
+  --mediumvioletred: #c71585;
+  --palevioletred: #db7093;
+  --darkgreen: #006400;
+  --forestgreen: 	#228b22;
+  --chocolate : #d2691e;
+  --darkmagenta: #8b008b;
+  --dodgerblue: #1e90ff;
+  --royalblue: 	#4169e1;
+  --steelblue: 	#4682b4;
+  --mediumslateblue: #7b68ee;
+  --cornflowerblue : #6495ed;
+  --hotpink: 	#ff69b4;
+  --mediumorchid: #ba55d3;
+  --orchid: #da70d6;
+  --rebeccapurple: #663399;
+  --mediumpurple: 	#9370db;
+  --peru: #cd853f;
+  --goldenrod: #daa520;
+  --darksalmon: #e9967a;
+  --thistle: #d8bfd8;
+  --rosybrown: #bc8f8f;
+  --cornsilk : #fff8dc;
+  --slategrey: #708090;
+  --whitesmoke: #f5f5f5;
+  --tan: #D2B48C;
+  --saddlebrown: #8B4513;
+  --seashell: #FFF5EE;
+  --rosybrown: #BC8F8F;
+  --ghostwhite: #F8F8FF;
+  --floralwhite: #F8F8FF;
+  --gainsboro: #DCDCDC;
+  --lightgrey: #D3D3D3;
+  --teal: #008080;
+  --white: #FFFFFF;
+  --black: #000000;
+  --dimgray: #696969;
+  --gray: #808080;
+  --darkgrey: #a9a9a9;
+  --silver: #C0C0C0;
+}
+/* end of colors stock */
+
+.bg-color1 {
+  background: var(--teal);
+}
+.bg-color2 {
+  background: var(--saddlebrown);
+}
+.bg-color3 {
+  background: var(--dimgray);
+}
+.height-100 {
+  min-height: 100vh;
+}
+
+/* page1 */
+.store {
+  background: var(--slategrey);
+}
+
+.single-item {
+  transition: all 0.3 linear;
+}
+.single-item:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--greenfromw3s);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: white;
+}
+/* end of page1 */
+
+.imagebanner {
+  background: url("img/frontend500x332jpeg.jpeg")center/cover no-repeat fixed;
+}
