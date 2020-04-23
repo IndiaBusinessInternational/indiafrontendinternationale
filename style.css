@@ -56,8 +56,8 @@
 .bg-color3 {
   background: var(--dimgray);
 }
-.height-100 {
-  min-height: 100vh;
+.height-80 {
+  min-height: 80vh;
 }
 
 /* page1 */
@@ -100,6 +100,62 @@
 }
 /* end of page1 */
 
-.imagebanner {
-  background: url("img/FrontOffice Background1017x650jpg.jpg")center/cover no-repeat fixed;
+/* gallery section */
+.gallery-btn:hover {
+  background: var(--greenfromw3s);
+  color: var(--white);
+}
+.gallery-img-container {
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden;
+}
+.gallery-img-container:hover {
+  background: var(--white);
+  color: var(--white);
+}
+.gallery-img {
+  transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.3;
+}
+.gallery-info {
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background: var(--goldenrod);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.gallery-info:hover {
+  text-decoration: none;
+  color: var(--black);
+}
+.gallery-img-container:hover .gallery-info {
+  transform: translate(-50%, 0);
+}
+.gallery-icon {
+  position: absolute;
+  color: var(--white);
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+.gallery-btn:hover {
+  background: var(--sienna);
+  color: var(--white);
+}
+.bg-color {
+  background: var(--white);
+  color: var(--sienna);
 }
